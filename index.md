@@ -6,25 +6,25 @@ layout: default
 
 
 
-\# Welcome
+# Welcome
 
 
 
-Hi, I'm \*\*Arian Hadzibrahimi\*\*, a software engineer passionate about ML, NLP, and full-stack development.
+Hi, I'm **Arian Hadzibrahimi**, a software engineer passionate about ML, NLP, and full-stack development.
 
 
 
-\## Projects
+## Projects
 
 
 
 
 
-\## Links
+## Links
 
 
 
-\- \[GitHub Profile](https://github.com/arianhadzi)
+- [GitHub Profile](https://github.com/arianhadzi)
 
-\- \[LinkedIn Profile](https://www.linkedin.com/in/arian-hadzibrahimi-109788219/)
+- [LinkedIn Profile](https://www.linkedin.com/in/arian-hadzibrahimi-109788219/)
 
