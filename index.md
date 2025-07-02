@@ -15,7 +15,8 @@ Hi, I'm **Arian Hadzibrahimi**, a software engineer passionate about ML, NLP, an
 
 
 ## Projects
-
+    Local Legal RAG (Senior Design, Port Authority NY/NJ)
+    
 
 
 
@@ -26,5 +27,4 @@ Hi, I'm **Arian Hadzibrahimi**, a software engineer passionate about ML, NLP, an
 
 - [GitHub Profile](https://github.com/arianhadzi)
 
-- [LinkedIn Profile](https://www.linkedin.com/in/arian-hadzibrahimi-109788219/)
-
+- [LinkedIn Profile](https://www.linkedin.com/in/arian-hadzibrahimi/)

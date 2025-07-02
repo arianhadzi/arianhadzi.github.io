@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      color: white;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #2c5364);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      padding: 40px;
+    }
+
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    a {
+      color: #ffd86b;
+      font-weight: bold;
+    }
+
+    .project {
+      margin-bottom: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Arian Hadzibrahimi</h1>
+  <h3>Software Engineer | ML • NLP • Full-Stack</h3>
+
+  <div class="project">
+    <h2><a href="https://github.com/arianhadzi/rag-legalbert">Local Legal RAG – Port Authority NY/NJ</a></h2>
+    <p>Chunking and vector store system using LangChain & FAISS. Reduced latency by 40%.</p>
+  </div>
+
+  <div class="project">
+    <h2><a href="https://github.com/arianhadzi/bankruptcy-predictor">Bankruptcy Prediction</a></h2>
+    <p>Stacked classifier using KNN, SVM, and Logistic Regression. Trained on financial datasets.</p>
+  </div>
+
+  <div class="project">
+    <h2><a href="https://github.com/arianhadzi/summary-bart">Abstractive Text Summarizer</a></h2>
+    <p>Text summarization using BART with ROUGE metrics and sliding window handling.</p>
+  </div>
+
+  <p><a href="https://github.com/arianhadzi">GitHub</a> | <a href="https://linkedin.com/in/arianhadzibrahimi">LinkedIn</a></p>
+</body>
+</html>
