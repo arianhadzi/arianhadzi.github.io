@@ -18,12 +18,6 @@ Hi, I'm \*\*Arian Hadzibrahimi\*\*, a software engineer passionate about ML, NLP
 
 
 
-\- \[AudioAide: Spotify AI Chatbot](https://github.com/arianhadzi/audioaide)
-
-\- \[BART-based Text Summarizer](https://github.com/arianhadzi/summary-bart)
-
-\- \[Legal Document RAG System](https://github.com/arianhadzi/rag-legalbert)
-
 
 
 \## Links
