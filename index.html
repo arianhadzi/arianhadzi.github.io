@@ -1,56 +1,136 @@
----
-layout: default
----
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arian Hadzibrahimi | Software Engineer</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: white;
       margin: 0;
-      font-family: sans-serif;
-      color: white;
-      background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #2c5364);
-      background-size: 400% 400%;
-      animation: gradient 15s ease infinite;
       padding: 40px;
+      color: #111;
+      line-height: 1.6;
     }
-
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+    .container {
+      max-width: 800px;
+      margin: auto;
     }
-
-    a {
-      color: #ffd86b;
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .title-block h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    .title-block p {
+      color: #555;
+      margin: 0.3em 0;
+    }
+    .buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 8px 16px;
+      text-decoration: none;
+      background-color: black;
+      color: white;
+      border-radius: 5px;
       font-weight: bold;
     }
-
-    .project {
-      margin-bottom: 50px;
+    .tags span {
+      background-color: #eee;
+      padding: 4px 8px;
+      margin-right: 5px;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+    .projects, .experience {
+      margin-top: 40px;
+    }
+    .projects h2, .experience h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .project, .job {
+      margin-bottom: 30px;
+    }
+    .project-title {
+      font-weight: bold;
+    }
+    .icons img {
+      width: 24px;
+      margin-right: 10px;
+      vertical-align: middle;
     }
   </style>
 </head>
 <body>
-  <h1>Arian Hadzibrahimi</h1>
-  <h3>Software Engineer | ML • NLP • Full-Stack</h3>
+  <div class="container">
+    <div class="header">
+      <img src="your-photo.jpg" alt="Profile Photo">
+      <div class="title-block">
+        <h1>Arian Hadzibrahimi</h1>
+        <p>Software Engineer | ML • NLP • Full-Stack</p>
+        <div class="buttons">
+          <a href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </div>
 
-  <div class="project">
-    <h2><a href="https://github.com/arianhadzi/rag-legalbert">Local Legal RAG – Port Authority NY/NJ</a></h2>
-    <p>Chunking and vector store system using LangChain & FAISS. Reduced latency by 40%.</p>
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <p class="project-title">
+          <a href="https://github.com/arianhadzi/rag-legalbert">Local Legal RAG — Port Authority NY/NJ</a>
+        </p>
+        <p>Chunking + vector retrieval system with LangChain and FAISS. Improved latency by 40% using optimized chunking. Evaluated factuality and recall on legal docs.</p>
+      </div>
+      <div class="project">
+        <p class="project-title">
+          <a href="https://github.com/arianhadzi/bankruptcy-predictor">Bankruptcy Prediction — SIT</a>
+        </p>
+        <p>Ensemble classifier using KNN, SVM, Decision Tree with logistic regression meta-learner. Built to predict bankruptcy from real datasets.</p>
+      </div>
+      <div class="project">
+        <p class="project-title">
+          <a href="https://github.com/arianhadzi/summary-bart">Abstractive Text Summarization — SIT</a>
+        </p>
+        <p>BART-based summarizer with sliding window technique for long docs. Evaluated summaries using ROUGE and ground truth labels.</p>
+      </div>
+    </div>
+
+    <div class="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>Senior Design @ SIT (Port Authority) — Sep '24 - May '25</li>
+        <li>Machine Learning Fund. & App @ SIT — Jul '24</li>
+        <li>NLP @ SIT — Dec '24</li>
+        <li>DevOps Project (BeREEL) @ SIT — May '24</li>
+      </ul>
+    </div>
+
+    <div class="academia">
+      <h2>Academia</h2>
+      <ul>
+        <li><strong>Stevens Institute of Technology</strong> — B.S. in Computer Science (Expected May 2025)</li>
+        <li>Notable Coursework: Artificial Intelligence, Machine Learning Fundamentals, Natural Language Processing</li>
+      </ul>
+    </div>
+
+    <div class="icons">
+      <a href="mailto:arian@example.com"><img src="mail-icon.png" alt="Email"></a>
+      <a href="https://github.com/arianhadzi"><img src="github-icon.png" alt="GitHub"></a>
+      <a href="https://linkedin.com/in/arianhadzibrahimi"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+    </div>
   </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/arianhadzi/bankruptcy-predictor">Bankruptcy Prediction</a></h2>
-    <p>Stacked classifier using KNN, SVM, and Logistic Regression. Trained on financial datasets.</p>
-  </div>
-
-  <div class="project">
-    <h2><a href="https://github.com/arianhadzi/summary-bart">Abstractive Text Summarizer</a></h2>
-    <p>Text summarization using BART with ROUGE metrics and sliding window handling.</p>
-  </div>
-
-  <p><a href="https://github.com/arianhadzi">GitHub</a> | <a href="https://linkedin.com/in/arianhadzibrahimi">LinkedIn</a></p>
 </body>
 </html>
