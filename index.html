@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arian Hadzibrahimi | Software Engineer</title>
   <style>
     body {
@@ -13,75 +13,98 @@
       color: #111;
       line-height: 1.6;
     }
+
     .container {
-      max-width: 800px;
+      max-width: 1500px;
       margin: auto;
     }
+
     .header {
       display: flex;
       align-items: center;
       gap: 20px;
     }
+
     .header img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
     }
+
     .title-block h1 {
       margin: 0;
       font-size: 2em;
     }
+
     .title-block p {
       color: #555;
       margin: 0.3em 0;
     }
-    .buttons a {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 8px 16px;
+
+    .title-block a {
+      color: #333;
       text-decoration: none;
-      background-color: black;
-      color: white;
-      border-radius: 5px;
       font-weight: bold;
     }
-    .tags span {
-      background-color: #eee;
-      padding: 4px 8px;
-      margin-right: 5px;
-      border-radius: 4px;
-      font-size: 0.85em;
+
+    .title-block a:hover {
+      text-decoration: underline;
     }
-    .projects, .experience {
+
+    .bio {
+      margin-top: 10px;
+      color: #444;
+      max-width: 600px;
+      line-height: 1.5;
+    }
+
+    .contact-icons {
+      margin-top: 10px;
+    }
+
+    .contact-icons a img {
+      width: 36px;
+      height: 36px;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+
+    .projects, .experience, .academia {
       margin-top: 40px;
     }
-    .projects h2, .experience h2 {
+
+    .projects h2, .experience h2, .academia h2 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 5px;
     }
+
     .project, .job {
       margin-bottom: 30px;
     }
+
     .project-title {
       font-weight: bold;
-    }
-    .icons img {
-      width: 24px;
-      margin-right: 10px;
-      vertical-align: middle;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
-      <img src="your-photo.jpg" alt="Profile Photo">
+      <img src="linkedinselfie1.jpg" alt="Profile Photo" />
       <div class="title-block">
         <h1>Arian Hadzibrahimi</h1>
-        <p>Software Engineer | ML • NLP • Full-Stack</p>
-        <div class="buttons">
-          <a href="#contact">Contact Me</a>
+        <p>CS Graduate |  Software Development • Full-Stack • NLP </p>
+        <p><strong>Newburgh, NY</strong></p>
+        <p><a href="mailto:arian.hadzi@gmail.com">arian.hadzi@gmail.com</a></p>
+        <p class="bio">
+          I’m a Computer Science graduate with a Bachelor of Science degree from Stevens Institute of Technology.
+          I’m passionate about understanding real-world software problems and solutions, with interests in AI, machine learning, and natural language processing. <br>
+          Some of my hobbies involve music/music production, cooking at home, and exploring new technologies :D
+        </p>
+        <div class="contact-icons">
+          <a href="https://github.com/arianhadzi"><img src="githubicon.png" alt="GitHub"></a>
+          <a href="https://linkedin.com/in/arian-hadzibrahimi"><img src="linkedin.png" alt="LinkedIn"></a>
         </div>
       </div>
     </div>
@@ -96,13 +119,13 @@
       </div>
       <div class="project">
         <p class="project-title">
-          <a href="https://github.com/arianhadzi/bankruptcy-predictor">Bankruptcy Prediction — SIT</a>
+          <a href="https://github.com/arianhadzi/CS559">Bankruptcy Prediction — SIT</a>
         </p>
         <p>Ensemble classifier using KNN, SVM, Decision Tree with logistic regression meta-learner. Built to predict bankruptcy from real datasets.</p>
       </div>
       <div class="project">
         <p class="project-title">
-          <a href="https://github.com/arianhadzi/summary-bart">Abstractive Text Summarization — SIT</a>
+          <a href="https://github.com/arianhadzi/CS584">Abstractive Text Summarization — SIT</a>
         </p>
         <p>BART-based summarizer with sliding window technique for long docs. Evaluated summaries using ROUGE and ground truth labels.</p>
       </div>
@@ -111,10 +134,7 @@
     <div class="experience">
       <h2>Experience</h2>
       <ul>
-        <li>Senior Design @ SIT (Port Authority) — Sep '24 - May '25</li>
-        <li>Machine Learning Fund. & App @ SIT — Jul '24</li>
-        <li>NLP @ SIT — Dec '24</li>
-        <li>DevOps Project (BeREEL) @ SIT — May '24</li>
+        <li><a href="https://www.computer-specialist1.com/" target="_blank" rel="noopener noreferrer">Computer Specialist Repairs</a> — Newburgh, NY — Technician July ‘24 – August ‘24</li>
       </ul>
     </div>
 
@@ -124,12 +144,6 @@
         <li><strong>Stevens Institute of Technology</strong> — B.S. in Computer Science (Expected May 2025)</li>
         <li>Notable Coursework: Artificial Intelligence, Machine Learning Fundamentals, Natural Language Processing</li>
       </ul>
-    </div>
-
-    <div class="icons">
-      <a href="mailto:arian@example.com"><img src="mail-icon.png" alt="Email"></a>
-      <a href="https://github.com/arianhadzi"><img src="github-icon.png" alt="GitHub"></a>
-      <a href="https://linkedin.com/in/arianhadzibrahimi"><img src="linkedin-icon.png" alt="LinkedIn"></a>
     </div>
   </div>
 </body>
