@@ -4,112 +4,154 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Arian Hadzibrahimi | Software Engineer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      margin: 0;
-      padding: 40px;
-      color: #111;
-      line-height: 1.6;
-    }
+<style>
+  :root {
+    --accent: #0a66c2;
+    --light-gray: #f4f4f4;
+  }
 
-    .container {
-      max-width: 1500px;
-      margin: auto;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #222;
+    line-height: 1.6;
+  }
 
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 30px;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 20px;
+  }
+
+  .header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .title {
+    flex: 1;
+  }
+
+  .title h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+    margin-top: 5px;
+    color: #555;
+  }
+
+  .bio {
+    margin-top: 15px;
+    font-size: 1rem;
+    max-width: 800px;
+    color: #333;
+  }
+
+  .contact {
+    margin-top: 10px;
+  }
+
+  .contact a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+  }
+
+  h2 {
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 6px;
+    margin-top: 50px;
+    font-size: 1.8rem;
+  }
+
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .project, .job, .school {
+    margin-bottom: 20px;
+  }
+
+  .project-title, .job-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .project-title a {
+    color: #000;
+    text-decoration: none;
+  }
+
+  .project-title a:hover {
+    text-decoration: underline;
+    color: var(--accent);
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (max-width: 768px) {
     .header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     .header img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      object-fit: cover;
+      width: 100px;
+      height: 100px;
     }
 
-    .title-block h1 {
-      margin: 0;
-      font-size: 2em;
+    .title h1 {
+      font-size: 2rem;
     }
+  }
+</style>
 
-    .title-block p {
-      color: #555;
-      margin: 0.3em 0;
-    }
-
-    .title-block a {
-      color: #333;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .title-block a:hover {
-      text-decoration: underline;
-    }
-
-    .bio {
-      margin-top: 10px;
-      color: #444;
-      max-width: 600px;
-      line-height: 1.5;
-    }
-
-    .contact-icons {
-      margin-top: 10px;
-    }
-
-    .contact-icons a img {
-      width: 36px;
-      height: 36px;
-      margin-right: 12px;
-      vertical-align: middle;
-    }
-
-    .projects, .experience, .academia {
-      margin-top: 40px;
-    }
-
-    .projects h2, .experience h2, .academia h2 {
-      border-bottom: 2px solid #ddd;
-      padding-bottom: 5px;
-    }
-
-    .project, .job {
-      margin-bottom: 30px;
-    }
-
-    .project-title {
-      font-weight: bold;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
     <div class="header">
       <img src="linkedinselfie1.jpg" alt="Profile Photo" />
-      <div class="title-block">
+      <div class="title">
         <h1>Arian Hadzibrahimi</h1>
-        <p>CS Graduate |  Software Development • Full-Stack • NLP </p>
+        <p class="subtitle">CS Graduate &nbsp;|&nbsp; Software Development • Full-Stack • NLP</p>
         <p><strong>Newburgh, NY</strong></p>
-        <p><a href="mailto:arian.hadzi@gmail.com">arian.hadzi@gmail.com</a></p>
+        <div class="contact">
+          <a href="mailto:arian.hadzi@gmail.com">arian.hadzi@gmail.com</a>
+          <a href="https://github.com/arianhadzi" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/arian-hadzibrahimi" target="_blank">LinkedIn</a>
+        </div>
         <p class="bio">
           I’m a Computer Science graduate with a Bachelor of Science degree from Stevens Institute of Technology.
-          I’m passionate about understanding real-world software problems and solutions, with interests in AI, machine learning, and natural language processing. <br>
-          Some of my hobbies involve music/music production, cooking at home, and exploring new technologies :D
+          I’m passionate about understanding real-world software problems and solutions, with interests in AI, machine learning, and natural language processing.<br><br>
+          I’m actively looking for entry-level roles in software development, AI, or data science where I can contribute to building real-world solutions and grow as a developer among a team of experienced engineers.<br><br>
+          Some of my hobbies involve music/music production, cooking at home, and exploring new technologies 😄
         </p>
-        <div class="contact-icons">
-          <a href="https://github.com/arianhadzi"><img src="githubicon.png" alt="GitHub"></a>
-          <a href="https://linkedin.com/in/arian-hadzibrahimi"><img src="linkedin.png" alt="LinkedIn"></a>
-        </div>
       </div>
     </div>
 
-    <div class="projects">
+    <div class="section projects">
       <h2>Projects</h2>
       <div class="project">
         <p class="project-title">
@@ -131,14 +173,14 @@
       </div>
     </div>
 
-    <div class="experience">
+    <div class="section experience">
       <h2>Experience</h2>
       <ul>
         <li><a href="https://www.computer-specialist1.com/" target="_blank" rel="noopener noreferrer">Computer Specialist Repairs</a> — Newburgh, NY — Technician July ‘24 – August ‘24</li>
       </ul>
     </div>
 
-    <div class="academia">
+    <div class="section academia">
       <h2>Academia</h2>
       <ul>
         <li><strong>Stevens Institute of Technology</strong> — B.S. in Computer Science (Expected May 2025)</li>
