@@ -1,0 +1,52 @@
+---
+import "../styles/global.css";
+
+const { title = "Arian Hadzibrahimi", description = "Software Engineer" } = Astro.props;
+const pathname = Astro.url.pathname;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" />
+    <title>{title}</title>
+    <meta name="color-scheme" content="light dark" />
+  </head>
+  <body class="text-zinc-900 antialiased">
+    <div class="flex">
+      <!-- Sidebar -->
+      <aside class="fixed inset-y-0 left-0 w-48 border-r border-zinc-200 px-4 py-6">
+        <a href="/" class="block mb-6 font-semibold text-lg">arianhadzi.github.io</a>
+
+        <nav class="flex flex-col gap-2 text-zinc-700">
+          <a href="/"
+             class={`px-2 py-1 rounded ${pathname === '/' ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>home</a>
+          <a href="/about"
+             class={`px-2 py-1 rounded ${pathname.startsWith('/about') ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>about</a>
+          <a href="/projects"
+             class={`px-2 py-1 rounded ${pathname.startsWith('/projects') ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>projects</a>
+        </nav>
+
+        <div class="mt-8 text-sm text-zinc-500 space-y-1">
+          <p>Newburgh, NY</p>
+          <p><a href="mailto:arian.hadzi@gmail.com">arian.hadzi@gmail.com</a></p>
+          <p class="space-x-3">
+            <a href="https://github.com/arianhadzi" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/arian-hadzibrahimi" target="_blank" rel="noreferrer">LinkedIn</a>
+          </p>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main class="min-h-screen w-full" style={`margin-left: var(--sidebar-width)`}>
+        <div class="max-w-3xl mx-auto px-6 py-10">
+          <article class="prose">
+            <slot />
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
