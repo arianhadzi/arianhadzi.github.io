@@ -12,7 +12,7 @@ a { @apply text-accent hover:underline; }
 .bg-binary {
   background-image: url('../../public/binary-tile.svg');
   background-repeat: repeat;
-  background-size: 8px 6px; 
+  background-size: 16px 12px; 
   image-rendering: pixelated; 
 }
 
