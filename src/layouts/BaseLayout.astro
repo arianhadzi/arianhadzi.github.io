@@ -14,7 +14,8 @@ const pathname = Astro.url.pathname;
     <title>{title}</title>
     <meta name="color-scheme" content="light dark" />
   </head>
-  <body class="text-zinc-900 antialiased">
+  <body class="min-h-screen text-zinc-900 antialiased">
+    <div aria-hidden class="fixed inset-0 -z-10 bg-binary"></div>
     <div class="flex">
       <!-- Sidebar -->
       <aside class="fixed inset-y-0 left-0 w-48 border-r border-zinc-200 px-4 py-6">
@@ -27,7 +28,9 @@ const pathname = Astro.url.pathname;
              class={`px-2 py-1 rounded ${pathname.startsWith('/about') ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>about</a>
           <a href="/projects"
              class={`px-2 py-1 rounded ${pathname.startsWith('/projects') ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>projects</a>
-        </nav>
+          <a href="/pictures"
+             class={`px-2 py-1 rounded ${pathname.startsWith('/pictures') ? 'bg-zinc-100 font-medium' : 'hover:bg-zinc-50'}`}>pictures</a>
+
 
         <div class="mt-8 text-sm text-zinc-500 space-y-1">
           <p>Newburgh, NY</p>

@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { --sidebar-width: 12rem; } /* 192px */
+:root { --sidebar-width: 12rem; } 
 
 html, body { height: 100%; }
 a { @apply text-accent hover:underline; }
 
-/* nice readable defaults for Markdown content */
 .prose a { @apply text-accent; }
+
+.bg-binary {
+  background-image: url('../../public/binary-tile.svg');
+  background-repeat: repeat;
+  background-size: 8px 6px; 
+  image-rendering: pixelated; 
+}
+
+@media (prefers-color-scheme: dark) {
+  .bg-binary { filter: invert(1); }
+}
+
+@layer utilities {
+  .break-inside-avoid { break-inside: avoid; }
+}
